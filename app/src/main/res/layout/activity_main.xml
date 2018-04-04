@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="com.example.buluk.aplicationvideo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <VideoView
+        android:id="@+id/viewvideo"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+         android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/batiktulis"
+            android:onClick="Batiktulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Menggunakan canting batik"
+            android:fontFamily="serif-monospace"
+            android:textColor="#09024d"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/batikcap1"
+            android:onClick="capBatikI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Membuat cap batik part I"
+            android:fontFamily="serif-monospace"
+            android:textColor="#09024d"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/batikcap2"
+            android:onClick="capBatikII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Membuat cap Batik part II "
+            android:fontFamily="serif-monospace"
+            android:textColor="#09024d"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/batikcoletan"
+            android:onClick="Batikcoletan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video cara MemBatik coletan"
+            android:fontFamily="serif-monospace"
+            android:textColor="#09024d"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:src="@drawable/youku"
+            />
+       <TextView
+           android:layout_toRightOf="@+id/image1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Video Membatik"
+           android:textSize="30sp"
+           android:textColor="#fbf5f5fa"
+           android:fontFamily="sans-serif-smallcaps"
+           android:layout_centerInParent="true"
+           />
+
+    </RelativeLayout>
+</LinearLayout>
